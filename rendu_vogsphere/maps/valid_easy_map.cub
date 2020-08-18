@@ -1,0 +1,16 @@
+R 320 240
+NO textures/canopy.xpm
+SO textures/foliage.xpm
+WE textures/autumn_leaves.xpm
+EA textures/bamboo.xpm
+S textures/sprite_goupix.xpm
+F  50,   102,   50
+C 0,0,139
+11111111111
+10000001001
+10000001001 
+10011100001
+10100000111
+11000000001
+10000N00001
+11111111111

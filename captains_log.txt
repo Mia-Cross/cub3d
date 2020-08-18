@@ -1,0 +1,45 @@
+    :: COMMANDES ::
+_______________________________________________________________
+< ESC > La fenetre se ferme
+<SPACE> Trace un carré dans l'image
+<  D  > Trace une verticale et une horizontale dans l'image
+<  I  > Affiche l'image dans la fenetre
+< any > Trace les diagonales (direct dans la fenetre)
+_______________________________________________________________
+
+[22/12]
+- J'ai cree pleins de structures :
+    t_param     > contient toutes les infos qu'on passe a la gestion d'events
+    t_color     > code ARGB de la couleur, doit etre traduite avec convert_to_int()
+    t_window    > contient les infos sur la fenetre active
+et la plupart des fonctions de manipulation de ces structures.
+- Je sais ouvrir une fenetre et dessiner dedans avec des pixels en fonction des touches
+du clavier mais pour l'instant pas moyen d'ecrire dans une image.
+- Je sais creer une image et l'afficher dans ma fenetre mais pour l'instant c'est pas
+tres interessant parce que c'est tout noir.
+
+[27/12]
+- Je sais dessiner des lignes droites et des carres dans une image.
+- Comment est ce que je cree une perspective ? Sur quels chiffres je me base pour calculer
+mes equations de droites ?
+- Commencer par remplir l'image d'une couleur pour le plafond et une pour le sol ?
+- Coder le renouvellement de l'image (et la destruction propre de la precedente)
+
+[1/01]
+- Je sais lire la map avec gnl et la transformer en matrice (int**)
+- Je verifie que la map est bien fermée et qu'elle contient un (seul) joueur.
+>> Implementer le raytracing !
+
+https://lodev.org/cgtutor/raycasting.html
+https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/
+http://projet-moteur-3d.e-monsite.com/pages/raycasting/raycasting.html
+https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
+https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
+
+
+
+
+
+/////
+Creer un tableau d'int qui stocke pour chaque case les deplacements possibles sous
+la forme d'un masque binaire.
